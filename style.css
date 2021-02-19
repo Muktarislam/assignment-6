@@ -1,0 +1,281 @@
+#sliders {
+    height: 400px;
+    width: 60%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    transition: all 400ms ease;
+}
+
+#sliders:hover {
+    height: 500px;
+    width: 70%;
+    cursor: pointer;
+}
+
+.gallery-header {
+    display: none;
+}
+
+.slider-item {
+    display: none;
+}
+
+.img-thumbnail {
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.img-thumbnail:hover {
+    height: 250px;
+    width: 400px;
+    cursor: pointer;
+    border-radius: 30%;
+    box-shadow: rgb(71, 71, 71) 10px 10px 20px;
+    margin-bottom: 10px;
+    background-color: rgba(251, 251, 251, 0.2)
+}
+
+.form-control {
+    margin-left: 100px;
+}
+
+.added {
+    border: 3px solid #1e1743;
+    border-radius: 5px;
+}
+
+img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.prev-next {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    background-color: transparent;
+    padding: 8px 10px;
+    color: #fff;
+}
+
+.dot {
+    background-color: rgb(163, 156, 156);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.main {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .justify-content-around.align-items-center.mt-3.gallery-header.mb-2 {
+        flex-direction: column;
+    }
+    #sliders {
+        height: 300px;
+        width: 90%;
+    }
+}
+
+.button {
+    border: none;
+    background: #ff7a59;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 700ms ease;
+}
+
+.button:hover {
+    color: #ff7a59;
+    border: #ff7a59 solid 1px;
+    background: #fff;
+}
+
+.button2 {
+    border: none;
+    background: #ff7a59;
+    color: #fff;
+    padding: 10px 537px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 700ms ease;
+}
+
+.button2:hover {
+    color: #000;
+    border: #ff7a59 solid 1px;
+    background: rgb(248, 185, 185);
+}
+
+.button1 {
+    border: none;
+    background: #ff7a59;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 700ms ease;
+    float: right;
+    margin-right: -100px;
+    margin-top: -20px;
+}
+
+.button1:hover {
+    color: #ff7a59;
+    border: #ff7a59 solid 1px;
+    background: #fff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.checkbox {}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    height: 150px;
+    width: 150px;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #fff;
+    background: #ff7a59;
+    padding: 0 5px;
+    position: absolute;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
